@@ -3,24 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_hexaMaj.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adamammour <adamammour@student.42.fr>      +#+  +:+       +#+        */
+/*   By: adammour <adammour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 16:35:51 by adammour          #+#    #+#             */
-/*   Updated: 2024/12/10 11:27:34 by adamammour       ###   ########.fr       */
+/*   Updated: 2024/12/12 18:31:11 by adammour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_print_hexMin(int nb)
+int	ft_print_hexMaj(long nb)
 {
-    long n;
-    char *hexa;
-    int i;
-    n = nb;
-    hexa = "0123456789ABCDEF";
-    i = 0;
-    if (n >= 16)
-        ft_print_hexMin(n / 16);
-    i++;
-    ft_print_char(hexa[n % 16]);
-    return (i);
+	char *hexa;
+	int i;
+	hexa = "0123456789ABCDEF";
+	i = 0;
+
+	if (nb >= 16)
+		ft_print_hexMin(nb / 16);
+	i++;
+	ft_print_char(hexa[nb % 16]);
+	return (i);
 }

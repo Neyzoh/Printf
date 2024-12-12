@@ -3,16 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adamammour <adamammour@student.42.fr>      +#+  +:+       +#+        */
+/*   By: adammour <adammour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 16:35:51 by adammour          #+#    #+#             */
-/*   Updated: 2024/12/07 18:24:32 by adamammour       ###   ########.fr       */
+/*   Updated: 2024/12/12 20:04:13 by adammour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdarg.h>
 
-// fonction dite variadique
+int ft_(char c, va_list args)
+{
+    int size; 
+
+    size = 0;
+    if (c == '%')
+        write(1, '%', 1);
+    
+}
 
 int ft_printf(const char *, ...)
 {
