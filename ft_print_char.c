@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_print_char.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adamammour <adamammour@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 16:35:51 by adammour          #+#    #+#             */
-/*   Updated: 2024/12/07 18:24:32 by adamammour       ###   ########.fr       */
+/*   Updated: 2024/12/07 18:33:05 by adamammour       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
+#include <unistd.h>
 
-// fonction dite variadique
-
-int ft_printf(const char *, ...)
+int ft_print_char(char c)
 {
-    
+    write(1, &c, 1);
+    return(1);
 }
