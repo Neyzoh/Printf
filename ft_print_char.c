@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_char.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adamammour <adamammour@student.42.fr>      +#+  +:+       +#+        */
+/*   By: adammour <adammour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 16:35:51 by adammour          #+#    #+#             */
-/*   Updated: 2024/12/07 18:33:05 by adamammour       ###   ########.fr       */
+/*   Updated: 2024/12/16 19:27:28 by adammour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "ft_printf.h"
 
-int ft_print_char(char c)
+int	ft_print_char(char c)
 {
-    write(1, &c, 1);
-    return(1);
+	write(1, &c, 1);
+	return (1);
 }

@@ -6,9 +6,11 @@
 /*   By: adammour <adammour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 16:35:51 by adammour          #+#    #+#             */
-/*   Updated: 2024/12/12 18:31:11 by adammour         ###   ########.fr       */
+/*   Updated: 2024/12/16 19:27:36 by adammour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int	ft_print_hexMaj(long nb)
 {
